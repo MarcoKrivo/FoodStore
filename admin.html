@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administracion</title>
+</head>
+<body>
+
+    <header>
+        <h1>Panel de Administracion</h1>
+        <ul>
+            <li><a href="index.html">Volver a la Tienda</a></li>
+            <li><a href="#">Cerrar Seccion</a></li>
+        </ul>
+    </header>
+        
+    <hr>
+
+    <h2>Gestion de Productos</h2>
+    <button>+ Nuevo Producto</button>
+    
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Imagen</th>
+                <th>Nombre</th>
+                <th>Categoria</th>
+                <th>Precio</th>
+                <th>Stock</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td><img src="assets/img/hambur.jpg" width="50px"></td>
+                <td>Triple Cheddar</td>
+                <td>Hamburguesas</td>
+                <td>$15000</td>
+                <td>10</td>
+                <td>
+                    <a href="#">Editar</a>
+                    <a href="#">Eliminar</a>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><img src="assets/img/pizza.jpg" width="50px"></td>
+                <td>Pizza peperoni</td>
+                <td>Pizzas</td>
+                <td>$11000</td>
+                <td>10</td>
+                <td>
+                    <a href="#">Editar</a>
+                    <a href="#">Eliminar</a>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><img src="assets/img/papas.jpg" width="50px"></td>
+                <td>Papas con cheddar</td>
+                <td>Papas fritas</td>
+                <td>$9000</td>
+                <td>10</td>
+                <td>
+                    <a href="#">Editar</a>
+                    <a href="#">Eliminar</a>
+                </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td><img src="assets/img/gaseosas.jpg" width="50px"></td>
+                <td>Gaseosas</td>
+                <td>Bebidas</td>
+                <td>$3000</td>
+                <td>40</td>
+                <td>
+                    <a href="#">Editar</a>
+                    <a href="#">Eliminar</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <form> 
+        <h3>Agregar Producto Rapido</h3>
+
+        <label for="nombre">Nombre:</label>
+        <input id="nombre" type="text" name="nombre" placeholder="Ej: Hamburguesas"/>
+        
+        <br>
+
+        <label for="Precio">Precio:</label>
+        <input id="precio" type="number" name="Precio"/> 
+        
+        <br>
+
+        <label for="Stock">Stock Inicial</label>
+        <input id="stock" type="number" name="Stock"/>
+
+        <br>
+
+        <label for="Categoria">Categoria:</label>
+        <select id="Categoria" name="Categoria">
+            <option value="">Seleccione un opcion...</option>
+            <option>Hamburguesas</option>
+            <option>Pizzas</option>
+            <option>Papas fritas</option>
+            <option>Bebidas</option>
+        </select>
+
+        <br>
+
+        <label for="descripcion">Descripcion:</label>
+        <br>
+        <textarea id="descripcion" name="descripcion" rows="4" cols="30" placeholder="Ingresa los ingredientes..."></textarea>
+        
+        <br>
+
+        <button type="submit">Guardar Producto</button>
+
+    </form>
+
+</body>
+</html>
